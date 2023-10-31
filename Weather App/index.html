@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+<!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+<!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <i class="fa-sharp fa-solid fa-location-dot" style="font-size: 28px; margin-right: 4px;"></i>
+            <input type="text" placeholder="Search" spellcheck="false" class="search-input" autofocus="on">
+            <button class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+        <div class="weatherInfo">
+            <img src="images/404.png" alt="weather-icon" class="weatherIcon" width="200px">
+            <h1 class="tempPrimary">- -</h1>
+            <p class="weatherType"></p>
+            <p class="cityCountry" style="font-size: 20px;"><b>--</b></p>
+        </div>
+        <div class="footer">
+            <div class="humidSection">
+                <i class="fa-solid fa-water footerImg"></i>
+                <div class="humidity">
+                    <p class="humidValue">--</p>
+                    <p class="humidity">Humidity</p>
+                </div>
+            </div>
+            <div class="windSection">
+                <i class="fa-solid fa-wind footerImg"></i>
+                <div class="wind">
+                    <p class="windValue">--</p>
+                    <p class="wind">Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
